@@ -4,17 +4,13 @@ import {
     creator,
     web,
     javascript,
-    typescript,
     html,
     css,
     reactjs,
-    redux,
     tailwind,
     nodejs,
     mongodb,
     git,
-    figma,
-    docker,
     meta,
     starbucks,
     tesla,
@@ -23,6 +19,15 @@ import {
     jobit,
     tripguide,
     threejs,
+    python,
+    java,
+    vscode,
+    flask,
+    mysql,
+    bootstrap,
+    api_walker,
+    pokemon_api,
+    am_photography,
 } from "../assets";
 
 export const navLinks = [
@@ -34,6 +39,7 @@ export const navLinks = [
     id: "work",
     title: "Work",
 },
+
 {
     id: "contact",
     title: "Contact",
@@ -65,52 +71,60 @@ const technologies = [
     icon: html,
 },
 {
+    name: "Bootstrap",
+    icon: bootstrap,
+},
+{
     name: "CSS 3",
     icon: css,
-},
-{
-    name: "JavaScript",
-    icon: javascript,
-},
-{
-    name: "TypeScript",
-    icon: typescript,
-},
-{
-    name: "React JS",
-    icon: reactjs,
-},
-{
-    name: "Redux Toolkit",
-    icon: redux,
 },
 {
     name: "Tailwind CSS",
     icon: tailwind,
 },
 {
-    name: "Node JS",
-    icon: nodejs,
+    name: "JavaScript",
+    icon: javascript,
 },
 {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "React JS",
+    icon: reactjs,
+},
+{
+    name: "Node JS",
+    icon: nodejs,
 },
 {
     name: "Three JS",
     icon: threejs,
 },
 {
-    name: "git",
+    name: "java",
+    icon: java,
+},
+{
+    name: "Python",
+    icon: python,
+},
+{
+    name: "Flask",
+    icon: flask,
+},
+{
+    name: "MongoDB",
+    icon: mongodb,
+},
+{
+    name: "Git",
     icon: git,
 },
 {
-    name: "figma",
-    icon: figma,
+    name: "MySQL",
+    icon: mysql,
 },
 {
-    name: "docker",
-    icon: docker,
+    name: "VS Code",
+    icon: vscode,
 },
 ];
 
@@ -199,67 +213,67 @@ const testimonials = [
 
 const projects = [
 {
-    name: "Car Rent",
+    name: "Pokemon API",
     description:
-    "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    "Web-based API app that allows user to search for a shiny pokemon by name or ID or click the drop-down menu to view the pokemon's ID to insert into the search bar. Image generated from search is a sprite from the Pokemon API.",
     tags: [
     {
-        name: "react",
+        name: "Postman",
         color: "blue-text-gradient",
     },
     {
-        name: "mongodb",
+        name: "JavaScript",
         color: "green-text-gradient",
     },
     {
-        name: "tailwind",
+        name: "Bootstrap",
         color: "pink-text-gradient",
     },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: pokemon_api,
+    source_code_link: "https://github.com/Alexanderpmann/pokemon-api",
 },
 {
-    name: "Job IT",
+    name: "Luke API Walker",
     description:
-    "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    "Web application that enables users to search by planet or people IDs based on site metrics under the search bar for either a planet or person of the StarWars Universe.",
     tags: [
     {
-        name: "react",
+        name: "Postman",
         color: "blue-text-gradient",
     },
     {
-        name: "restapi",
+        name: "JavaScript",
         color: "green-text-gradient",
     },
     {
-        name: "scss",
+        name: "Bootstrap",
         color: "pink-text-gradient",
     },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: api_walker,
+    source_code_link: "https://github.com/Alexanderpmann/luke-api-walker",
 },
 {
-    name: "Trip Guide",
+    name: "Alexander Mann Photography",
     description:
-    "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    "My photography portfolio based on Smugmug and HTML templates with editing.",
     tags: [
     {
-        name: "nextjs",
+        name: "SmugMug",
         color: "blue-text-gradient",
     },
     {
-        name: "supabase",
+        name: "HTML",
         color: "green-text-gradient",
     },
     {
-        name: "css",
+        name: "CSS",
         color: "pink-text-gradient",
     },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: am_photography,
+    source_code_link: "https://www.alexandermannphotography.com/",
 },
 ];
 
