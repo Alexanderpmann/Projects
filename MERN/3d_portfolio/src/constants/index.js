@@ -1,9 +1,5 @@
 import {
-    mobile,
     backend,
-    creator,
-    web,
-    javascript,
     html,
     css,
     reactjs,
@@ -11,23 +7,27 @@ import {
     nodejs,
     mongodb,
     git,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
     threejs,
     python,
     java,
     vscode,
     flask,
     mysql,
-    bootstrap,
     api_walker,
     pokemon_api,
     am_photography,
+    antonetti,
+    eaker,
+    alex,
+    raspberry_pi,
+    adobe,
+    coding_dojo,
+    dealeron,
+    lee_property,
+    web_partners,
+    web_developer,
+    frontend,
+    photography,
 } from "../assets";
 
 export const navLinks = [
@@ -49,11 +49,11 @@ export const navLinks = [
 const services = [
 {
     title: "Web Developer",
-    icon: web,
+    icon: web_developer,
 },
 {
     title: "Front-End Developer",
-    icon: mobile,
+    icon: frontend,
 },
 {
     title: "Back-end Developer",
@@ -61,7 +61,7 @@ const services = [
 },
 {
     title: "Photography",
-    icon: creator,
+    icon: photography,
 },
 ];
 
@@ -71,20 +71,12 @@ const technologies = [
     icon: html,
 },
 {
-    name: "Bootstrap",
-    icon: bootstrap,
-},
-{
     name: "CSS 3",
     icon: css,
 },
 {
     name: "Tailwind CSS",
     icon: tailwind,
-},
-{
-    name: "JavaScript",
-    icon: javascript,
 },
 {
     name: "React JS",
@@ -111,6 +103,10 @@ const technologies = [
     icon: flask,
 },
 {
+    name: "MySQL",
+    icon: mysql,
+},
+{
     name: "MongoDB",
     icon: mongodb,
 },
@@ -119,12 +115,16 @@ const technologies = [
     icon: git,
 },
 {
-    name: "MySQL",
-    icon: mysql,
-},
-{
     name: "VS Code",
     icon: vscode,
+},
+{
+    name: "Adobe",
+    icon: adobe,
+},
+{
+    name: "Raspberry Pi",
+    icon: raspberry_pi,
 },
 ];
 
@@ -132,7 +132,7 @@ const experiences = [
 {
     title: "Senior Technical Support II",
     company_name: "DealerOn",
-    icon: tesla,
+    icon: dealeron,
     iconBg: "#1a2c47",
     date: "Jan 2016 - Jan 2017",
     points: [
@@ -146,7 +146,7 @@ const experiences = [
 {
     title: "Web Project Manager",
     company_name: "Web Partners, LLC",
-    icon: meta,
+    icon: web_partners,
     iconBg: "#1b2c4d",
     date: "Jan 2017 - Mar 2017",
     points: [
@@ -159,7 +159,7 @@ const experiences = [
 {
     title: "Property Manager",
     company_name: "Lee Property Management, LLC",
-    icon: shopify,
+    icon: lee_property,
     iconBg: "#13223f",
     date: "Jan 2021 - Dec 2021",
     points: [
@@ -172,7 +172,7 @@ const experiences = [
 {
     title: "Student",
     company_name: "Coding Dojo Academy",
-    icon: starbucks,
+    icon: coding_dojo,
     iconBg: "#202020",
     date: "Feb 2022 - Aug 2022",
     points: [
@@ -191,7 +191,7 @@ const testimonials = [
     name: "Blain Eaker",
     designation: "General Manager",
     company: "Oak Ridge Auto Sales",
-    image: "https://media.licdn.com/dms/image/C5103AQH2-JpOJ5To5A/profile-displayphoto-shrink_200_200/0/1517498156578?e=1689206400&v=beta&t=6w6iTmoElJqKMsAZTOgSuduK3jgtT3PQcgqu0kxfoTE",
+    image: eaker,
 },
 {
     testimonial:
@@ -199,7 +199,7 @@ const testimonials = [
     name: "Alexander J Chaudhry",
     designation: "General Counsel",
     company: "FNC Title Services, LLC",
-    image: "https://media.licdn.com/dms/image/C4D03AQGjKfcquNzkAg/profile-displayphoto-shrink_200_200/0/1599773317256?e=1689206400&v=beta&t=itsshM9B8XiT9Txtdv2kH5PmuGavFSu0TXS8hbahk9Y",
+    image: alex,
 },
 {
     testimonial:
@@ -207,7 +207,7 @@ const testimonials = [
     name: "Jorge Antonetti",
     designation: "Software Consultant",
     company: "SharpCloud",
-    image: "https://media.licdn.com/dms/image/C4D03AQGndu16YbTc1Q/profile-displayphoto-shrink_200_200/0/1529897602341?e=1689206400&v=beta&t=NtSKy7gT6u48-RYCZtz6XTR0wK3JaO_DU6jY0hU1I9E",
+    image: antonetti,
 },
 ];
 
