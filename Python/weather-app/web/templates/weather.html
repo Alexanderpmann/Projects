@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        .custom-container {
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 5%;
+            background-color: rgb(255, 242, 183);
+            box-shadow: 5px 10px rgb(83, 83, 83);
+            text-align: center;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 500px;
+        }
+    </style>
+    <title>Current Weather</title>
+</head>
+<body>
+    <div class="custom-container">
+        <p>{{ weather.day_of_week }} | {{weather.date}}</p>
+        <h1>Weather in {{ weather.name }}</h1>
+        <p>{{ weather.description }}</p>
+        <img src="{{ weather.icon }}" alt="Weather icon">
+        <p>Temperature: {{ weather.temperature }}°F</p>
+    </div>
+</body>
+</html>
