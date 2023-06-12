@@ -232,6 +232,7 @@ const projects = [
     ],
     image: pokemon_api,
     source_code_link: "https://github.com/Alexanderpmann/pokemon-api",
+    demo_link: "https://pokemon-api-mauve-beta.vercel.app/",
 },
 {
     name: "Luke API Walker",
@@ -253,6 +254,7 @@ const projects = [
     ],
     image: api_walker,
     source_code_link: "https://github.com/Alexanderpmann/luke-api-walker",
+    demo_link: "https://luke-api-walker.vercel.app/",
 },
 {
     name: "Alexander Mann Photography",
@@ -273,7 +275,8 @@ const projects = [
     },
     ],
     image: am_photography,
-    source_code_link: "https://www.alexandermannphotography.com/",
+    source_code_link: "https://github.com/Alexanderpmann",
+    demo_link: "https://www.alexandermannphotography.com/",
 },
 ];
 

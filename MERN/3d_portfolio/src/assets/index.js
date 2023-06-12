@@ -8,6 +8,7 @@ import web_developer from "./web_developer.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import view from "./view.png";
 
 // tech images for BallCanvas
 
@@ -85,6 +86,7 @@ export {
   frontend,
   photography,
   web_developer,
+  view,
 };
 
 
