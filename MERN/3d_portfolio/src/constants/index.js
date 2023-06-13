@@ -122,10 +122,6 @@ const technologies = [
     name: "Adobe",
     icon: adobe,
 },
-{
-    name: "Raspberry Pi",
-    icon: raspberry_pi,
-},
 ];
 
 const experiences = [
