@@ -29,7 +29,6 @@ import java from "./tech2/java.png";
 import vscode from "./tech2/vscode.png";
 import python from "./tech2/python.png";
 import mysql from "./tech2/mysql.png";
-import raspberry_pi from "./tech2/raspberry_pi.png";
 import adobe from "./tech2/adobe.png";
 
 // updated images for work
@@ -77,7 +76,6 @@ export {
   antonetti,
   alex,
   eaker,
-  raspberry_pi,
   adobe,
   coding_dojo,
   dealeron,

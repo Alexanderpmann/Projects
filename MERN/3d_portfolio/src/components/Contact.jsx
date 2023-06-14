@@ -8,68 +8,58 @@ import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 
 const Contact = () => {
-  const formRef = useRef()
+  const formRef = useRef();
   const [form, setForm] = useState({
     name: '',
     email: '',
-    message: ''
-  })
+    message: '',
+  });
 
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
 
   const handleChange = e => {
-    const { target } = e
-    const { name, value } = target
-
-    setForm({
-      ...form,
-      [name]: value
-    })
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value})
   }
 
   const handleSubmit = e => {
-    e.preventDefault()
-    setLoading(true)
+    e.preventDefault();
+    setLoading(true);
 
-    emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILKS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: 'Alexander P. Mann',
-          from_email: form.email,
-          to_email: 'alexanderpmann33@gmail.com',
-          message: form.message
-        },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setLoading(false)
-          alert('Thank you. I will get back to you as soon as possible.')
+    emailjs.send(
+    'service_570ecua',
+    'template_iv6pokm',
+    {
+      from_name: form.name,
+      to_name: 'Alexander',
+      from_email: form.email,
+      to_email: 'alexanderpmann33@gmail.com',
+      message: form.message,
+    },
+    'tU7Bg45bfyCZsh197'
+    )
+    .then(() => {
+      setLoading(false);
+      alert('Thank you. I will get back to you as soon as possible!');
 
-          setForm({
-            name: '',
-            email: '',
-            message: ''
-          })
-        },
-        error => {
-          setLoading(false)
-          console.error(error)
+      setForm({
+        name: '',
+        email: '',
+        message: '',
+      })
+    }, (error) => {
+      setLoading(false)
 
-          alert('Ahh, something went wrong. Please try again.')
-        }
-      )
+      console.log(error);
+
+      alert('Something went wrong.')
+    })
   }
 
   return (
     <div
-      className={
-        'xl:mt-12 flex xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'
-      }
-    >
+      className=
+        'xl:mt-12 flex xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
       <motion.div
         variants={slideIn('left', 'tween', 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
@@ -77,27 +67,24 @@ const Contact = () => {
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
-        {/* form start */}
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8'
+          className="mt-12 flex flex-col gap-8"
         >
-          {/* name label */}
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Name</span>
+          <label className="flex flex-col">
+            <span className="text-white font-medium mb-4">Your Name</span>
             <input
-              type='text'
-              name='name'
+              type="text"
+              name="name"
               value={form.name}
               onChange={handleChange}
               placeholder="What's your name?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
             />
           </label>
-          {/* email label */}
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your email</span>
+            <span className='text-white font-medium mb-4'>Your Email</span>
             <input
               type='email'
               name='email'
@@ -107,7 +94,6 @@ const Contact = () => {
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'
             />
           </label>
-          {/* message label */}
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Message</span>
             <textarea
@@ -119,7 +105,6 @@ const Contact = () => {
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'
             />
           </label>
-          {/* button for form */}
           <button
             type='submit'
             className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl'
@@ -127,7 +112,6 @@ const Contact = () => {
             {loading ? 'Sending...' : 'Send'}
           </button>
         </form>
-        {/* form end */}
       </motion.div>
 
       <motion.div

@@ -5,12 +5,9 @@ import {
     reactjs,
     tailwind,
     nodejs,
-    mongodb,
     git,
-    threejs,
     python,
     java,
-    vscode,
     flask,
     mysql,
     api_walker,
@@ -19,8 +16,6 @@ import {
     antonetti,
     eaker,
     alex,
-    raspberry_pi,
-    adobe,
     coding_dojo,
     dealeron,
     lee_property,
@@ -87,10 +82,6 @@ const technologies = [
     icon: nodejs,
 },
 {
-    name: "Three JS",
-    icon: threejs,
-},
-{
     name: "java",
     icon: java,
 },
@@ -107,20 +98,8 @@ const technologies = [
     icon: mysql,
 },
 {
-    name: "MongoDB",
-    icon: mongodb,
-},
-{
     name: "Git",
     icon: git,
-},
-{
-    name: "VS Code",
-    icon: vscode,
-},
-{
-    name: "Adobe",
-    icon: adobe,
 },
 ];
 
